@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Lint Checks') {
             steps {
-                sh "Performing style checks"
+                sh "echo Performing style checks"
                 sh "pip install pylint"
                 sh "pylint payment.py || true"
             }
