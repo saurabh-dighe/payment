@@ -1,8 +1,6 @@
 pipeline { 
-    agent {
-        label any
-    }
-    stages {
+    agent any
+    
         stage('Lint Checks') {
             steps {
                 sh "echo Performing style checks"
