@@ -1,12 +1,12 @@
 pipeline { 
     agent {
-        label 'ws'
+        label any
     }
     stages {
         stage('Lint Checks') {
             steps {
                 sh "echo Performing style checks"
-                sh "pip install pylint"
+                sh "pip3 install pylint"
                 sh "pylint payment.py || true"
             }
         }
