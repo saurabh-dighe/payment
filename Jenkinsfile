@@ -2,4 +2,4 @@
 
 env.COMPONENT="payment"
 
-payment(COMPONENT)
+python(COMPONENT)
