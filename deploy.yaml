@@ -55,6 +55,9 @@ metadata:
 data:
   USER_HOST: "user-svc"
   CART_HOST: "cart-svc"
+  AMQP_HOST: "rabbitmq-dev.roboshop.internal"
+  AMQP_USER: "roboshop"
+  AMQP_PASS: "roboshop123"
 ---
 #NodePort service
 apiVersion: v1
@@ -80,8 +83,8 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: payment
-  minReplicas: 3
-  maxReplicas: 10
+  minReplicas: 2
+  maxReplicas: 5  
   metrics:
   - type: Resource
     resource:
