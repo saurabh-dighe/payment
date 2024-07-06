@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: payment
-        image: 992382386864.dkr.ecr.us-east-1.amazonaws.com/payment:301
+        image: 992382386864.dkr.ecr.us-east-1.amazonaws.com/payment:500
         ports:
         - containerPort: 8080
         #livenessProbe
